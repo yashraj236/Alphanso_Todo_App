@@ -1,0 +1,130 @@
+/* General App Styles */
+.app-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+
+.header-container {
+  display: flex;
+  align-items: center; 
+  justify-content: space-between; 
+  margin-bottom: 20px; 
+  flex-wrap: wrap;
+}
+
+h1 {
+  margin: 0; 
+  font-size: 24px; 
+  flex-grow: 1; 
+}
+
+.search-bar {
+  flex-grow: 2; 
+  margin: 0 15px;
+  width: 200px;
+}
+
+.filter-buttons {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end; 
+}
+
+.filter-buttons button {
+  padding: 5px 15px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  cursor: pointer;
+}
+
+.filter-buttons button.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.filter-buttons button:hover {
+  background-color: #0056b3;
+  color: white;
+}
+
+/* Task list styling */
+.task-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+.task-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+  cursor: pointer;
+  position: relative;
+}
+
+.task-item.completed {
+  background-color: #d1ffd6; 
+}
+
+/* Tick icon styling */
+.task-tick {
+  position: absolute;
+  left: 10px;
+  width: 25px;
+  height: 25px;
+}
+
+.task-text {
+  flex-grow: 1;
+  text-align: left;
+  margin-left: 40px; 
+}
+
+.delete-button {
+  background-color: transparent;
+  color: #0a0808;
+  border: none;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 5px;
+  transition: color 0.3s;
+}
+
+.delete-button:hover {
+  color: #c82333;
+}
+
+/* Task form input styling */
+.task-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.task-button {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.task-button:hover {
+  background-color: #333;
+}
